@@ -1,8 +1,8 @@
-# Objetivo
+## Objetivo
 
 Entender la diferencia entre TDD, realización de pruebas unitarias y PHPUnit.
 
-# Contenido 
+## Contenido 
  
 
 Muchas veces como desarrolladores nos enfocamos en mejorar nuestras habilidades para ser más efectivos, buscando escribir código más rápidamente, utilizando herramientas que nos permitan crear más código rápidamente para poder cumplir plazos o poder lograr esa aplicación que teníamos en nuestra mente. En lo que no nos enfocamos es en como lo hacemos, nuestra manera natural de programar muchas veces viene dictada por un enfoque algorítmico estructurado, pero ¿ que es esto ? Imagina por un segundo como he ido escribiendo este propio documento que ahora mismo tu lees, primero he creado el fichero con un fin en mente, el de expresar las ideas de una primera lección de un curso de phpunit, luego para comenzar a redactarhe sentado las bases de mi fichero, esto es las secciones ( Divide y vencerás ) he escrito Objetivo, Contenido y Ejercicios segmentando así el trabajo que quiero realizar, luego he redactado un objetivo claro que me permita enfocarme en el contenido, lugar donde explicaré definiciones y relaciones así hasta llegar completar dicha sección, en pocas palabras, he ido haciendo una cosa a la vez encapsuladamente en vez de tratarlo como un conjunto siguiento una aproximación algorítmica de seguimiento de pasos, como si estuviese programando de manera estructuradad, sin la presencia de objetos, tomemos un mejor ejemplo, el ejemplo que en las mayorías de las universidades y cursos de programación utilizan para enseñar a programar, el ejemplo del algoritmo para cambiar una llanta, si no conoces este ejercicio detén en esta línea e intentar llevarlo a cabo antes de ver el que propong a continuación y trata de crear el tuyo , esto es, una serie de pasos que seguirías para cambiar la llante pinchada de tu coche: 
@@ -32,7 +32,7 @@ antes de crear una solución de un paso en concreto, has de crear una prueba que
 
 Si queremos realizar pruebas unitarias sobre un programa lo podemos llevar a cabo y sería eso pruebas unitarias podríamos coger un metodo de nuestro programa denominado pullOutTire (Sacar llanta) y crear una prueba unitaria sobre el mismo que verifique que el coche ahora tiene una llanta menos, si por el contrario quisieramos hacer TDD, este método no tendría que existir y tendriamos una prueba que verifique que existe, esta prueba fallaría ( Estado rojo ), creariamos el método en nuestro código y volveríamos a ejecutar nuestro test, esta vez nuestra prueba pasaría ( Estado Verde )  pero estaríamos validando solo su existencia todavía nos falta validar que este método actua sobre un coche , para ello crearíamos unaprueba nueva en la que nos aseguraramos que el método pullOutTire puede recibir un coche como argumento, una vez más nuestra prueba fallaría y tendríamos que crear el código necesario para asegurarnos que estamos recibiendo un coche al cual sacarle la llanta, una vez creado el código estaríamos en ( Estado verde ) en el cual podemos hacer dos cosas, seguir generando pruebas o mejorando nuestra prueba verde Actual hasta llevarla a Azul, en el estado azul podemos refactorizar nuestro código asegurarnos que las convención de nombres y checkstyles se cumple o incluso refactorizamos para simplificar nuestra solución.
 
-# Ejercicios 
+## Ejercicios 
 
 Cree el método pullOutTire usando TDD.
 
