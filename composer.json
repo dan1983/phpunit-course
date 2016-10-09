@@ -1,0 +1,19 @@
+{
+    "name": "diegoseso/phpunit-course",
+    "description": "Phpunit test curso en castellano",
+    "require-dev": {
+        "phpunit/phpunit": "^5.4"
+    },
+    "authors": [
+        {
+            "name": "Diego Sosa",
+            "email": "diego.venezuela@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Checkout\\": "Class1/"
+        }
+    }
+}
