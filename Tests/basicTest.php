@@ -4,7 +4,7 @@ namespace Class1\Tests;
 
 use Class1\Person;
 
-Class class1Test extends \PHPUnit_FrameWork_TestCase
+Class class1Test extends \PHPUnit_Framework_TestCase
 {
 
     /**
